@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="productpage.ProductController" spacing="10" alignment="CENTER">
+    <Label styleClass="header" text="Product Details" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="ID:" />
+        <Label fx:id="id" styleClass="value" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="Price:" />
+        <Label fx:id="price" styleClass="value" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="Name:" />
+        <Label fx:id="name" styleClass="value" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="Description:" />
+        <Label fx:id="description" styleClass="value" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label styleClass="property" text="Owner:" />
+        <Label fx:id="owner" styleClass="value" />
+    </HBox>
+
+    <Button text="Get Details" onAction="#onGet" />
+</VBox>
